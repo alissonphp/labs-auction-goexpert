@@ -14,7 +14,7 @@ services:
       - localNetwork
 
   mongodb:
-    image: mongo:latest
+    image: mongo:${MONGO_IMAGE_TAG:-7.0}
     container_name: mongodb
     ports:
       - "27017:27017"
